@@ -1,6 +1,8 @@
 # robosys2024
 ロボットシステム学授業用
 
+[![test](https://github.com/KoukiHagiwara/robosys2024/actions/workflows/test.yml/badge.svg)](https://github.com/KoukiHagiwara/robosys2024/actions/workflows/test.yml)
+
 # 必要なソフトウェア
 - Python
   - テスト済みバージョン: 3.7~3.10
