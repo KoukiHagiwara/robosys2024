@@ -33,11 +33,11 @@ out=$(echo 7 | ./factorial)
 [ "${out}" = "5040" ] || ng "$LINENO"
 
 out=$(echo "" | ./factorial)
-[ "$?" = 1 ]      || ng "$LINENO"
+[ "$?" = 1 ] || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
 out=$(echo hello | ./factorial) 
-[ "$?" = 1 ]      || ng "$LINENO"
+[ "$?" = 1 ] || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
 
