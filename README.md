@@ -1,7 +1,7 @@
 # robosys2024
 ロボットシステム学授業用
 
-#インストール方法
+# インストール方法
 以下のコマンドをローカル環境にインストールしてください
 ```
 $ git clone https://github.com/KoukiHagiwara/robosys2024.git
