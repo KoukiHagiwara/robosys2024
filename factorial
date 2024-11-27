@@ -13,6 +13,8 @@ def factorial(n):
     return n * factorial(n - 1)
 
 if __name__ == "__main__":
-    n = int(sys.argv[1])
-    print(factorial(n))
-
+    try:
+        n = int(input(""))
+        print(factorial(n))
+    except ValueError:
+        print("Please enter a valid integer.")
