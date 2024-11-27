@@ -9,7 +9,7 @@ $ git clone https://github.com/KoukiHagiwara/robosys2024.git
 
 # plusコマンド
 [![test](https://github.com/KoukiHagiwara/robosys2024/actions/workflows/test.yml/badge.svg)](https://github.com/KoukiHagiwara/robosys2024/actions/workflows/test.yml)
-- 入力された数値を加算させるコマンド
+- 標準入力された数値を加算させるコマンド
  - `seq`の後に数値を入力し、`./plus`を実行する。
 - 実行例
 1から5までの和を計算させる。
