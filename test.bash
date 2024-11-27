@@ -32,7 +32,7 @@ out=$(echo 5 | ./factorial)
 out=$(echo 7 | ./factorial)
 [ "${out}" = "5040" ] || ng "$LINENO"
 
-out=$(echo "" | ./factorial)
+out=$(echo | ./factorial)
 [ "$?" = 1 ] || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
