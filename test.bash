@@ -20,30 +20,25 @@ out=$(echo | ./plus)
 
 
 
-out=$(./factorial 0)
+out=$(echo 0 | ./factorial)
 [ "${out}" = "1" ] || ng "$LINENO"
 
-out=$(./factorial 1)
+out=$(echo 1 | ./factorial)
 [ "${out}" = "1" ] || ng "$LINENO"
 
-out=$(./factorial 5)
+out=$(echo 5 | ./factorial)
 [ "${out}" = "120" ] || ng "$LINENO"
 
-out=$(./factorial 7)
+out=$(echo 7 | ./factorial)
 [ "${out}" = "5040" ] || ng "$LINENO"
 
-
-out=$(./factorial )
+out=$(echo "" | ./factorial)
 [ "$?" = 1 ]      || ng "$LINENO"
 [ "${out}" = "" ] || ng "$LINENO"
 
-out=$(./factorial hello ) #2>/dev/null)
-[ "$?" = 1 ] || ng "$LINENO"
-[ "${out}" = "" ] || ng"$LINENO"
-
-out=$(./factorial)  #2>/dev/null)
-[ "$?" = 1 ] || ng "$LINENO"
-[ "${out}" = "" ] || ng"$LINENO"
+out=$(echo hello | ./factorial) 
+[ "$?" = 1 ]      || ng "$LINENO"
+[ "${out}" = "" ] || ng "$LINENO"
 
 
 [ "${res}" = 0 ] && echo OK
