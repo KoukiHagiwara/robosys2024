@@ -5,6 +5,7 @@
 以下のリポジトリをクローンしてローカル環境でコマンドを実行できるようにセットアップしてください
 ```
 $ git clone https://github.com/KoukiHagiwara/robosys2024.git
+$ cd robosys2024
 ```
 
 # plusコマンド
@@ -14,7 +15,7 @@ $ git clone https://github.com/KoukiHagiwara/robosys2024.git
 - 実行例
 1から5までの和を計算させる。
 ```
-seq 5 | ./plus
+$ seq 5 | ./plus
 ```
 - 実行結果
 ```
@@ -26,7 +27,7 @@ seq 5 | ./plus
 - 実行例
 5の階乗を計算させる。
 ```
-echo 5 | ./factorial
+$ echo 5 | ./factorial
 ```
 - 実行結果
 ```
