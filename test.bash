@@ -1,4 +1,4 @@
-#!/bin/bash 
+#!/bin/bash -xv 
 # SPDX-FileCopyrightText: 2024 Kouki Hagiwara
 # SPDX-License-Identifier: BSD-3-Clause
 
